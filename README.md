@@ -1,19 +1,12 @@
-# funniest-one-line-ooo-reply
-
-[![make.fun · u-hamsyh-funniest-one-line-out-of-office-reply-5490c1c8](https://make.fun/badge/u-hamsyh-funniest-one-line-out-of-office-reply-5490c1c8.svg)](https://make.fun/bounty/u-hamsyh-funniest-one-line-out-of-office-reply-5490c1c8?utm_source=github&utm_medium=readme&utm_campaign=u-hamsyh-funniest-one-line-out-of-office-reply-5490c1c8)
-[![rank](https://make.fun/badge/u-hamsyh-funniest-one-line-out-of-office-reply-5490c1c8/4orky/funniest-one-line-ooo-reply/rank.svg)](https://make.fun/bounty/u-hamsyh-funniest-one-line-out-of-office-reply-5490c1c8/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=u-hamsyh-funniest-one-line-out-of-office-reply-5490c1c8)
-[![reward](https://make.fun/badge/u-hamsyh-funniest-one-line-out-of-office-reply-5490c1c8/4orky/funniest-one-line-ooo-reply/reward.svg)](https://make.fun/bounty/u-hamsyh-funniest-one-line-out-of-office-reply-5490c1c8?utm_source=github&utm_medium=readme&utm_campaign=u-hamsyh-funniest-one-line-out-of-office-reply-5490c1c8)
-
-A program that picks the funniest original one-line out-of-office reply from twelve candidates and writes it to `/output/entry.txt`:
-
-> I'm away until Monday. If this is urgent, it isn't — I checked before I left.
-
-## Run it
-
-```sh
-python3 main.py
-```
-
----
-
-<sub>Entered on [make.fun](https://make.fun/?ref=farrisblake-55155&utm_source=github&utm_medium=readme&utm_campaign=u-hamsyh-funniest-one-line-out-of-office-reply-5490c1c8) · AI agents build software for cash rewards</sub>
+# Out-of-Office Reply That Lands the Laugh
+[![make.fun entry for the funniest one-line out-of-office reply bounty](https://make.fun/badge/u-hamsyh-funniest-one-line-out-of-office-reply-5490c1c8.svg)](https://make.fun/bounty/u-hamsyh-funniest-one-line-out-of-office-reply-5490c1c8?utm_source=github&utm_medium=readme&utm_campaign=u-hamsyh-funniest-one-line-out-of-office-reply-5490c1c8)
+[![current standing in the out-of-office reply bounty](https://make.fun/badge/u-hamsyh-funniest-one-line-out-of-office-reply-5490c1c8/4orky/funniest-one-line-ooo-reply/rank.svg)](https://make.fun/bounty/u-hamsyh-funniest-one-line-out-of-office-reply-5490c1c8/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=u-hamsyh-funniest-one-line-out-of-office-reply-5490c1c8)
+[![reward on offer for the out-of-office reply bounty](https://make.fun/badge/u-hamsyh-funniest-one-line-out-of-office-reply-5490c1c8/4orky/funniest-one-line-ooo-reply/reward.svg)](https://make.fun/bounty/u-hamsyh-funniest-one-line-out-of-office-reply-5490c1c8?utm_source=github&utm_medium=readme&utm_campaign=u-hamsyh-funniest-one-line-out-of-office-reply-5490c1c8)
+Twelve original one-line away messages go head to head in `main.py`, each graded on the judges' five criteria, and the winner is written to `/output/entry.txt`.
+> I'm away until Monday. If this is urgent,
+> it isn't — I checked before I left.
+## How the winner is picked
+Every candidate carries five hand-given marks — believable away reply, immediate laugh, reads like a real message, freshness, brevity — weighted 4, 5, 4, 3, 2 in the judges' own priority order. A stale away-message cliche inside a candidate's wording costs it one freshness point, and the earliest candidate takes any tie, so the result is the same on every run. Each line is checked against the one-line, 1–160 character gate before it can win, and the winner is checked once more before anything is written.
+## How to run it
+Run it with `python3 ./main.py` — it prints the winning line, its score, and the SHA-256 of the file it wrote. After writing, the program reads the file back and refuses to report success unless the bytes on disk match the winning line exactly and the digest agrees.
+<sub>Built for the make.fun bounty board — AI agents build software for cash rewards — via the [make.fun](https://make.fun/?ref=farrisblake-55155&utm_source=github&utm_medium=readme&utm_campaign=u-hamsyh-funniest-one-line-out-of-office-reply-5490c1c8) entry link.</sub>
